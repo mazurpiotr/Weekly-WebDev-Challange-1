@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("./img/bg.png");
+    background-size: cover;
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+/* LOGOS */
+header,
+footer {
+    opacity: 0.3;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    margin: 20px;
+}
+
+header img {
+    width: 80%;
+    max-width: 430px;
+}
+
+footer img {
+    widows: 100%;
+}
+
+/* CONTAINERS */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 992px) {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .flex-colum {
+        align-content: space-between;
+    }
+}
+
+/* FORMS' HEADERS */
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.75);
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* FORM  */
+.form-container {
+    margin-bottom: 50px;
+    max-width: 384px;
+}
+
+.form-shadow {
+
+    box-shadow: 0 0 5px 25px rgba(0, 0, 0, 0.23);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 384px;
+    margin-top: 38px;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+}
+
+/* INPUTS, TEXT AREAS, SELECTS */
+::placeholder {
+    color: rgb(175, 175, 175);
+    opacity: 1;
+}
+
+input,
+textarea,
+select {
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    border: none;
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    height: 40px;
+    background-color: #fff;
+    margin: 20px 20px 0 20px;
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+}
+
+.input-textarea {
+    min-height: 228px;
+}
+
+/* ICONS */
+.input i {
+    display: flex;
+    color: #dedede;
+    font-size: 22px;
+    margin: auto;
+    padding: 5px 12px 5px 12px;
+    border-right: 2px solid #e3e3e3;
+}
+
+/* CHECKBOX */
+.checkbox {
+    margin: 20px 20px 0 20px;
+    padding: 0px;
+    height: 20px;
+    min-width: 152px;
+}
+
+.checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkbox label {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    color: rgb(175, 175, 175);
+
+    position: relative;
+    display: inline-block;
+    padding-left: 40px;
+
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox label::before {
+    content: "";
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    background-color: #ffffff;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 3px;
+    left: 0px;
+    top: -3px;
+}
+
+.checkbox label::after {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-color: #88c814;
+    border-radius: 3px;
+    box-shadow: inset 2px 2px 10px 0px rgba(255, 255, 255, 0.4);
+    left: 6px;
+    top: 3px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+}
+
+.checkbox input[type="checkbox"]+label::after {
+    content: none;
+}
+
+.checkbox input[type="checkbox"]:checked+label::after {
+    content: "";
+}
+
+/* BUTTONS */
+.row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+}
+
+.btn-large {
+    padding: 10px;
+}
+
+.btn-small {
+    padding: 3px 0px;
+    width: 40%
+}
+
+.btn-green {
+    border: 1px solid rgb(59, 154, 0);
+    background: linear-gradient(rgb(162, 215, 63), rgb(129, 195, 33));
+}
+
+.btn-green:hover {
+    background: linear-gradient(rgb(129, 195, 33), rgb(162, 215, 63));
+}
+
+.btn-lime {
+    border: 1px solid rgb(144, 202, 109);
+    background: linear-gradient(rgb(172, 209, 130), rgb(205, 228, 176));
+}
+
+.btn-lime:hover {
+    background: linear-gradient(rgb(205, 228, 176), rgb(172, 209, 130));
+}
+
+.btn-red {
+    border: 1px solid rgb(162, 32, 42);
+    background: linear-gradient(rgb(240, 55, 71), rgb(246, 94, 112));
+}
+
+.btn-red:hover {
+    background: linear-gradient(rgb(246, 94, 112), rgb(240, 55, 71));
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weekly WebDev Challenge - 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ICONS - FONTELLO -->
+    <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css">
+
+    <!-- GOOGLE FONTS - Titillium -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!-- MY JS -->
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="./img/top_logo.png" alt="">
+    </header>
+
+    <div class="flex-container">
+
+        <!-- Left Column -->
+        <div class="flex-column">
+
+            <!-- Register Form -->
+            <div class="form-container">
+                <h1>Register Form</h1>
+                <div class="form-shadow">
+                    <form action="">
+                        <div class="input">
+                            <i class="icon-user"></i>
+                            <input type="text" name="" id="" placeholder="Username" required>
+                        </div>
+                        <div class="input">
+                            <i class="icon-lock"></i>
+                            <input type="password" name="" id="" placeholder="Password" required>
+                        </div>
+                        <div class="input">
+                            <i class="icon-lock"></i>
+                            <input type="password" name="" id="" placeholder="Confirm Password" required>
+                        </div>
+                        <div class="input">
+                            <i class="icon-mail"></i>
+                            <input type="email" name="" id="" placeholder="Email" required>
+                        </div>
+                        <div class="input">
+                            <i class="icon-location"></i>
+                            <select name="" id="" required>
+                                <option value="" selected disabled>Your Location</option>
+                                <option value="">Warszawa</option>
+                                <option value="">Katowice</option>
+                                <option value="">Kraków</option>
+                                <option value="">Poznań</option>
+                            </select>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="singUp" required>
+                            <label for="singUp">I have read and accept the terms of use.</label>
+                        </div>
+                        <button class="btn btn-large btn-green">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <!-- End Of Register Form -->
+
+            <!-- Send Email -->
+            <div class="form-container">
+                <h1>Send Email</h1>
+                <div class="form-shadow">
+                    <form action="">
+                        <div class="input">
+                            <i class="icon-user"></i>
+                            <input type="text" name="" id="" placeholder="Your Name">
+                        </div>
+                        <div class="input">
+                            <i class="icon-mail"></i>
+                            <input type="email" name="" id="" placeholder="Your Email">
+                        </div>
+                        <div class="input input-textarea">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Type your message ..."></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="sendEmail" required>
+                            <label for="sendEmail">Send copy to my Email</label>
+                        </div>
+                        <button class="btn btn-large btn-green">Send Email</button>
+                    </form>
+                </div>
+            </div>
+            <!-- End Of Send Email -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="flex-column">
+
+            <!-- Sign In Form -->
+            <div class="form-container">
+                <h1>Sign In Form</h1>
+                <div class="form-shadow">
+                    <form action="">
+                        <div class="input">
+                            <i class="icon-user"></i>
+                            <input type="text" name="" id="" placeholder="Username">
+                        </div>
+                        <div class="input">
+                            <i class="icon-lock"></i>
+                            <input type="password" name="" id="" placeholder="Password">
+                        </div>
+                        <div class="row">
+                            <div class="checkbox">
+                                <input type="checkbox" id="rememberMe">
+                                <label for="rememberMe">Remember me</label>
+                            </div>
+                            <button class="btn btn-small btn-green">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- End Of Sign In Form -->
+
+            <!-- Recover Form -->
+            <div class="form-container">
+                <h1>Recover Form</h1>
+                <div class="form-shadow">
+                    <form action="">
+                        <div class="input">
+                            <i class="icon-mail"></i>
+                            <input type="email" name="" id="" placeholder="Enter Your Email">
+                        </div>
+                        <div class="input">
+                            <i class="icon-mobile-alt"></i>
+                            <input type="text" name="" id="" placeholder="Enter your Phone number">
+                        </div>
+                        <div class="row">
+                            <button class="btn btn-small btn-green">Send</button>
+                            <button class="btn btn-small btn-lime">Done</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- End Of Recover Form -->
+
+            <!-- Subscribe Form -->
+            <div class="form-container">
+                <h1>Subscribe Form</h1>
+                <div class="form-shadow">
+                    <form action="">
+                        <div class="input">
+                            <i class="icon-mail"></i>
+                            <input type="email" name="" id="" placeholder="Enter your Email">
+                        </div>
+                        <div class="row">
+                            <button class="btn btn-small btn-green">Subscribe</button>
+                            <button class="btn btn-small btn-red">No, Thanks</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- End Of Subscribe Form -->
+
+            <!-- Bottom Logo -->
+            <footer>
+                <img src="img/logo.png" alt="">
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
