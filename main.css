@@ -115,7 +115,7 @@ select {
     height: 40px;
     background-color: #fff;
     margin: 20px 20px 0 20px;
-    width: 100%;
+    width: auto;
     border: 1px solid #cfcfcf;
     border-radius: 5px;
 }
